@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT</title>
+</head>
+<body>
+    <h1>Git y GitHub</h1>
+    <hr>
+
+<div>
+    <h2>Git</h2>
+        <strong><p>Git es un sistema de control de versiones distribuido, lo que significa que un clon local 
+        del proyecto es un repositorio de control de versiones completo. Estos 
+        repositorios locales plenamente funcionales permiten trabajar sin conexión 
+        o de forma remota con facilidad.</p></strong>
+    <p>La flexibilidad y popularidad de Git lo convierten en una excelente opción para cualquier equipo. Muchos desarrolladores y graduados universitarios ya saben cómo usar Git. La comunidad de usuarios de Git ha creado recursos para entrenar a los desarrolladores y la popularidad de Git facilita recibir ayuda cuando se necesita.</p>
+</div>
+<div>
+    <h3>Aspectos básicos de Git</h3>
+    <p>Cada vez que se guarda el trabajo, Git crea una confirmación. Una confirmación es una instantánea de todos los archivos en un momento dado. Si un archivo no ha cambiado de una confirmación a la siguiente, Git usa el archivo almacenado anteriormente.</p>
+    <p>Las confirmaciones crean vínculos a otras confirmaciones, formando un gráfico del historial de desarrollo. Es posible revertir el código a una confirmación anterior, inspeccionar cómo cambian los archivos de una confirmación a la siguiente y revisar información como dónde y cuándo se realizaron los cambios. Las confirmaciones se identifican en Git mediante un hash criptográfico único del contenido de la confirmación. Dado que todo tiene hash, es imposible realizar cambios, perder la información o dañar los archivos sin que Git lo detecte.</p>
+
+    <h3>Ramas</h3>
+    <p>Cada desarrollador guarda los cambios en su propio repositorio de código local. 
+        Como resultado, puede haber muchos cambios diferentes basados en la misma confirmación. 
+        Git proporciona herramientas para aislar los cambios y volver a combinarlos posteriormente. 
+        Las ramas, que son punteros ligeros para el trabajo en curso, administran esta separación. 
+        Una vez finalizado el trabajo creado en una rama, 
+        se puede combinar de nuevo en la rama principal <mark>o troncal</mark> del equipo.</p>
+        <img src="https://learn.microsoft.com/es-es/devops/_img/branching_line.png" alt="_img1">
+</div>
+<div>
+    <h3>Archivos y confirmaciones</h3>
+    <img src="https://learn.microsoft.com/es-es/devops/_img/file_status_lifecycle.2.png" alt="img2">
+    <p>Los archivos de Git se encuentran en uno de estos tres estados: modificados, almacenados provisionalmente o confirmados. Cuando se modifica un archivo por primera vez, los cambios solo existen en el directorio de trabajo. Todavía no forman parte de una confirmación ni del historial de desarrollo. El desarrollador debe almacenar provisionalmente los archivos modificados que se incluirán en la confirmación. El área de almacenamiento provisional contiene todos los cambios que se incluirán en la siguiente confirmación. Una vez que el desarrollador esté satisfecho con los archivos almacenados provisionalmente, los archivos se empaquetan como una confirmación con un 
+        mensaje que describe lo que ha cambiado. Esta confirmación pasa a formar parte del historial de desarrollo.</p>
+</div>
+<hr>
+<h2>Comandos Basicos de Git</h2>
+<div>
+    <ul>
+        <li>Git clone: Git clone es un comando para descargarte el código fuente existente desde un repositorio remoto </li>
+           <p> <mark>git clone https://link-con-nombre-del-repositorio</mark></p>
+        <li>Git branch:Las ramas (branch) son altamente importantes en el mundo de Git. Usando ramas, varios desarrolladores pueden trabajar en paralelo en el mismo proyecto simultáneamente. Podemos usar el comando git branch para crearlas, listarlas y eliminarlas.</li>
+            <p> <mark>git branch nombre-de-la-rama </mark></p>
+        <li>Git checkout:Este es también uno de los comandos más utilizados en Git. Para trabajar en una rama, primero tienes que cambiarte a ella. Usaremos git checkout principalmente para cambiarte de una rama a otra. </li>
+            <p> <mark>git checkout nombre-de-la-rama </mark></p>
+        <li>Git status: El comando de git status nos da toda la información necesaria sobre la rama actual.</li>
+            <p> <mark>git status </mark></p>
+        <li>Git add:Necesitamos usar el comando git add para incluir los cambios del o de los archivos en tu siguiente commit.</li>
+            <p> <mark>git add archivo </mark></p>
+        <li> Git commit: Este sea quizás el comando más utilizado de Git. Una vez que se llega a cierto punto en el desarrollo, queremos guardar nuestros cambios quizás después de una tarea o asunto específico.Git commit es como establecer un punto de control en el proceso de desarrollo al cual puedes volver más tarde si es necesario.</li>
+            <p> <mark>git commit -m "mensaje de confirmación" </mark></p>
+    </ul>
+</div>
+<hr>
+<div>
+<h2>GitHub</h2>
+<img src="https://i.blogs.es/bd50eb/github_logo/1366_2000.png" alt="_img3">
+</div>
+<hr>
+<div>
+<p> <b>Github es un portal creado para alojar el código de las aplicaciones de cualquier desarrollador, La plataforma está creada para que los desarrolladores suban el código de sus aplicaciones y herramientas, y que como usuario no sólo puedas descargarte la aplicación, sino también entrar a su perfil para leer sobre ella o colaborar con su desarrollo.</b></p>
+<p>Git es uno de estos sistemas de control, que permite comparar el código de un archivo para ver las diferencias entre las versiones, restaurar versiones antiguas si algo sale mal, y fusionar los cambios de distintas versiones. También permite trabajar con distintas ramas de un proyecto, 
+    como la de desarrollo para meter nuevas funciones al programa o la de producción para depurar los bugs.</p>
+<p>Las principales características de la plataforma es que ofrece las mejores características de este tipo de servicios sin perder la simplicidad, y es una de las más utilizadas del mundo por los desarrolladores. Es multiplataforma, y tiene multitud de interfaces de usuario.</p>
+</div>
+<div>
+    <h3><em>Qué ofrece Github</em></h3>
+    <p>Github permite que los desarrolladores alojen proyectos creando repositorios de forma gratuita. Pero hay que tener una cosa en mente, y es que para poder subir gratis los proyectos deberán ser de código abierto. Y no quieres que tu aplicación sea de código abierto, la plataforma también tiene una versión de pago para alojar proyectos de forma privada.</p>
+    <p>Github también ofrece una serie de herramientas propias con las que complementar las ventajas que ya tiene el sistema Git de por sí solo. Por ejemplo, puedes crear una Wiki para cada proyecto, de forma que puedas ofrecer toda la información sobre él y anotar todos los cambios de las diferentes versiones.</p>
+    <p>También tiene un sistema de seguimiento de problemas, para que otras personas puedan hacer mejoras, sugerencias y optimizaciones en los proyectos. 
+        Ofrece también una <b>herramienta de revisión de código</b>, de forma que no sólo se pueda mirar el código fuente de una herramienta, sino que también se pueden dejar anotaciones para que su creador o tú mismo después si es tu proyecto las podáis revisar. 
+        Se pueden crear discusiones también alrededor de estas anotaciones para mejorar y optimizar el código.
+         A su vez, se pueden encontrar gráficos para ver cómo trabajan los desarrolladores en sus proyectos y bifurcaciones del proyecto, viendo las actualizaciones realizadas a partir de la primera versión o los cambios que se han realizado. Y por último también se incluyen características de redes sociales, como un sistema para seguir a tus creadores favoritos y ni perderte sus actualizaciones.</p>
+</div>
+</body>
+</html>
